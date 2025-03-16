@@ -382,8 +382,8 @@ if st.session_state["current_image_index"] == 0 and len(st.session_state["result
         cumulative_dsi += dsi_value
         cumulative_dsi_values.append(cumulative_dsi)
 
-        # Debugging: Print step-by-step calculations
-        st.write(f"DEBUG: Situation {i+1} | DSI Emotion: {dsi_text_value} | DSI Value: {dsi_value} | Cumulative DSI: {cumulative_dsi}")
+        '''# Debugging: Print step-by-step calculations
+        st.write(f"DEBUG: Situation {i+1} | DSI Emotion: {dsi_text_value} | DSI Value: {dsi_value} | Cumulative DSI: {cumulative_dsi}")'''
 
     # Store cumulative DSI in session state
     st.session_state["cumulative_dsi_list"] = cumulative_dsi_values
